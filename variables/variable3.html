@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Array Values</title>
+</head>
+<body>
+    <script>
+        // Define the array with the given values
+        let arrayList = [25, 50, "centre", 75, 100];
+        
+        // Function to update the value at a given index
+        function updateArrayValue(index, newValue) {
+            if (index >= 0 && index < arrayList.length) {
+                arrayList[index] = newValue;
+            } else {
+                console.log("Index out of bounds");
+            }
+        }
+
+        // Example updates
+        updateArrayValue(0, 30); // Update value at index 0 to 30
+        updateArrayValue(2, "center"); // Update value at index 2 to "center"
+        updateArrayValue(4, 110); // Update value at index 4 to 110
+        
+        // Log the updated array to the console
+        console.log(arrayList);
+    </script>
+</body>
+</html>
